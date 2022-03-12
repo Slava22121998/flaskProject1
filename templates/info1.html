@@ -1,0 +1,11 @@
+<html>
+<body>
+{% for candidate in candidates %}
+    <pre>
+        <strong>Имя: {{ candidate.name }}</strong>
+        <strong>Должность: {{ candidate.position }}</strong>
+        <strong>Скиллы: {{ candidate.skills }}</strong>
+    </pre>
+{% endfor %}
+</body>
+</html>

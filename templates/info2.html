@@ -1,0 +1,14 @@
+<html>
+<body>
+{% if 1 <= id <= 7 %}
+    <pre>
+        <img src="{{ candidates[id - 1].picture }}" alt="">
+        <strong>Имя: {{ candidates[id - 1].name }}</strong>
+        <strong>Должность: {{ candidates[id - 1].position }}</strong>
+        <strong>Скиллы: {{ candidates[id - 1].skills }}</strong>
+    </pre>
+{% else %}
+    <pre>User is not find!</pre>
+{% endif %}
+</body>
+</html>
