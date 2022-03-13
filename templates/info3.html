@@ -1,7 +1,7 @@
 <html>
 <body>
 {% for candidate in candidates %}
-    {% if skill in candidate.skills.lower() %}
+    {% if skill.lower() in candidate.skills.lower().split(", ") %}
         <pre>
             <strong>Имя: {{ candidate.name }}</strong>
             <strong>Должность: {{ candidate.position }}</strong>
